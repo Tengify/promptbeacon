@@ -17,6 +17,7 @@
     "site:build": "node scripts/site-build.mjs",
     "site:dev": "python3 -m http.server 4317 --bind 127.0.0.1 --directory website",
     "site:test": "node --test tests/website.test.mjs",
+    "site:publish": "npm run site:test && npm run site:build && node scripts/site-publish.mjs",
     "check:local": "npm run check && npm run site:test && npm run test:rust && npm run check:rust"
   },
   "dependencies": {

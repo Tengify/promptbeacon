@@ -1,7 +1,7 @@
 <p align="center"><img src="assets/icon.svg" width="76" alt="PromptBeacon"></p>
 <h1 align="center">PromptBeacon</h1>
 <p align="center"><strong>Know before you prompt.</strong><br>A color for your model. A signal for your effort.</p>
-<p align="center"><a href="https://github.com/Tengify/promptbeacon/releases">Download</a> · <a href="website/">Landing page</a> · <a href="docs/TESTING.md">Testing</a> · <a href="SECURITY.md">Security</a> · MIT</p>
+<p align="center"><a href="https://github.com/Tengify/promptbeacon/releases">Download</a> · <a href="https://tengify.github.io/promptbeacon/">Landing page</a> · <a href="docs/TESTING.md">Testing</a> · <a href="SECURITY.md">Security</a> · MIT</p>
 
 A local Rust + Tauri 2 tray utility for **macOS, Windows, and Linux**. A click-through border, tint, or corner badge tells you which model and reasoning effort are selected in the focused Codex or Claude Code session, before sending the next prompt.
 
@@ -17,7 +17,7 @@ New sessions can inherit a powerful model you didn't mean to use. Resumed sessio
 - Optional Claude Code terminal status-line integration with fresh session binding.
 - Local settings. No account, model requests, screenshots, prompt reads, or telemetry.
 
-The [interactive landing page](website/) uses synthetic sessions and generic model names. No real session, screenshot, diagnostic, or machine configuration is included in this repository.
+The [interactive landing page](https://tengify.github.io/promptbeacon/) uses synthetic sessions and generic model names. No real session, screenshot, diagnostic, or machine configuration is included in this repository.
 
 ## Installation
 
@@ -69,7 +69,7 @@ npm run site:build
 
 The wrappers use an ignored `.tools/` Rust installation when present, otherwise your system Rust. Release builds optimize for size, use whole-program LTO, strip symbols, and remap source/home paths. No Node.js runtime or browser engine is bundled with the app.
 
-**No GitHub Actions workflows.** Builds, reviews, packaging, and publication run locally. See [contributing](CONTRIBUTING.md) and [release instructions](docs/RELEASING.md). UI smoke tests use a locally installed Playwright Chromium browser; the scripts never publish their screenshots.
+**No custom GitHub Actions workflows.** Desktop builds, reviews, and packaging run locally. GitHub Pages uses its free managed deployment to publish the locally built landing page. See [contributing](CONTRIBUTING.md) and [release instructions](docs/RELEASING.md). UI smoke tests use a locally installed Playwright Chromium browser; the scripts never publish their screenshots.
 
 ## Landing page
 
@@ -79,7 +79,7 @@ npm run site:test
 npm run site:build
 ```
 
-Preview at `http://127.0.0.1:4317`. The download button detects the desktop OS and says “Download for macOS”, “Download for Windows”, or “Download for Linux”. Mobile/unknown clients get a chooser. Deploy `website/dist/` manually to any static host; no server runtime, analytics, or third-party fonts are needed.
+Preview at `http://127.0.0.1:4317`, or visit the [live page](https://tengify.github.io/promptbeacon/). The download button detects the desktop OS and says “Download for macOS”, “Download for Windows”, or “Download for Linux”. Mobile/unknown clients get a chooser. Maintainers can run `npm run site:publish` to build locally and update the `gh-pages` branch. See [website publishing notes](website/README.md). No server runtime, analytics, or third-party fonts are needed.
 
 ## Diagnostics
 

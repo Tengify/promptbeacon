@@ -2,6 +2,7 @@ import { chromium } from '@playwright/test';
 import assert from 'node:assert/strict';
 import { mkdir, writeFile } from 'node:fs/promises';
 await mkdir('work/site-qa', { recursive: true });
+const siteURL = process.env.PROMPTBEACON_SITE_URL || 'http://127.0.0.1:4317';
 const browser = await chromium.launch({ headless: true });
 const errors = [];
 const results = [];
@@ -10,7 +11,7 @@ try {
     const context = await browser.newContext({ viewport: { width, height }, reducedMotion: 'reduce' });
     const page = await context.newPage();
     page.on('pageerror', e => errors.push(e.message));
-    await page.goto('http://127.0.0.1:4317');
+    await page.goto(siteURL);
     await page.evaluate(() => document.fonts.ready);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `${name} overflow`);
     await page.getByRole('button', { name: 'Harbor API Model B' }).click();
@@ -47,7 +48,7 @@ try {
       Object.defineProperty(navigator, 'maxTouchPoints', { get: () => platform === 'MacIntel' ? 5 : 0 });
     }, {platform, agent});
     const page = await context.newPage();
-    await page.goto('http://127.0.0.1:4317');
+    await page.goto(siteURL);
     await page.waitForFunction(() => document.querySelector('#beacon-bars .filled'));
     assert.equal(await page.locator('[data-download-label]').first().textContent(), expected);
     if (expected.startsWith('Download')) assert.match(await page.locator('[data-download]').first().getAttribute('href'), /github.com\/Tengify\/promptbeacon\/releases\/download/);

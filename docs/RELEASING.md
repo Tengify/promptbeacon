@@ -1,6 +1,6 @@
 # Local releases
 
-This project does not use GitHub Actions. Run checks and builds on your own machine.
+This project has no custom GitHub Actions CI workflows. Run desktop checks and builds on your own machine. The landing page builds locally and uses GitHub Pages' free managed deployment from `gh-pages`.
 
 1. Update the version in `package.json`, `package-lock.json`, `src-tauri/Cargo.toml`, `src-tauri/Cargo.lock`, `src-tauri/tauri.conf.json`, and browser-preview version in `src/api.ts`.
 2. Run `npm ci`, `npm run check:local`, and `node scripts/cargo.mjs fmt --manifest-path src-tauri/Cargo.toml --check`.
@@ -10,7 +10,7 @@ This project does not use GitHub Actions. Run checks and builds on your own mach
 6. Archive packages under ignored `artifacts/release/`; compute SHA-256 checksums. Do not commit binaries or local toolchains to Git.
 7. Review `git diff --cached` and `git ls-files`; run a secret scanner against the exact staged tree. Include only source, tests with dummy data, documentation, and intended assets.
 8. Generate/include third-party notices with `node scripts/licenses.mjs`, then commit and push source. Create a draft GitHub release with `gh release create`, attach packages and checksums, verify artifact names, then publish the release. Run the resulting download URLs through an HTTP check.
-9. Update `website/releases.js` to the verified artifact names and run `npm run site:test`, browser smoke tests, and `npm run site:build`. Deploy `website/dist/` manually to a static host if desired.
+9. Update `website/releases.js` to the verified artifact names and run browser smoke tests. Run `npm run site:publish` to test/build locally and update the public GitHub Pages site. See [website publishing notes](../website/README.md). Desktop builds never run on GitHub Actions.
 
 ## Optional Windows cross-build
 
