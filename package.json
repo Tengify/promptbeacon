@@ -1,0 +1,32 @@
+{
+  "name": "promptbeacon",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "tauri": "node scripts/tauri.mjs",
+    "app:dev": "node scripts/tauri.mjs dev",
+    "app:build": "node scripts/tauri.mjs build",
+    "test": "vitest run",
+    "check": "npm run build && npm test",
+    "test:rust": "node scripts/cargo.mjs test --manifest-path src-tauri/Cargo.toml",
+    "check:rust": "node scripts/cargo.mjs clippy --manifest-path src-tauri/Cargo.toml --all-targets -- -D warnings",
+    "site:build": "node scripts/site-build.mjs",
+    "site:dev": "python3 -m http.server 4317 --bind 127.0.0.1 --directory website",
+    "site:test": "node --test tests/website.test.mjs",
+    "check:local": "npm run check && npm run site:test && npm run test:rust && npm run check:rust"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.10.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@tauri-apps/cli": "^2.10.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2",
+    "vitest": "^4.1.11"
+  }
+}

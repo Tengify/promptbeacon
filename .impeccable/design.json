@@ -1,0 +1,542 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-12T17:47:35Z",
+  "title": "Design System: PromptBeacon",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15.000% 0.00660 106.521)",
+          "oklch(26.429% 0.00660 106.521)",
+          "oklch(37.857% 0.00660 106.521)",
+          "oklch(49.286% 0.00660 106.521)",
+          "oklch(60.714% 0.00660 106.521)",
+          "oklch(72.143% 0.00660 106.521)",
+          "oklch(83.571% 0.00660 106.521)",
+          "oklch(95.000% 0.00660 106.521)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15.000% 0.01221 178.295)",
+          "oklch(26.429% 0.01221 178.295)",
+          "oklch(37.857% 0.01221 178.295)",
+          "oklch(49.286% 0.01221 178.295)",
+          "oklch(60.714% 0.01221 178.295)",
+          "oklch(72.143% 0.01221 178.295)",
+          "oklch(83.571% 0.01221 178.295)",
+          "oklch(95.000% 0.01221 178.295)"
+        ]
+      },
+      "paper-muted": {
+        "role": "neutral",
+        "displayName": "Paper Muted",
+        "tonalRamp": [
+          "oklch(15.000% 0.01473 156.615)",
+          "oklch(26.429% 0.01473 156.615)",
+          "oklch(37.857% 0.01473 156.615)",
+          "oklch(49.286% 0.01473 156.615)",
+          "oklch(60.714% 0.01473 156.615)",
+          "oklch(72.143% 0.01473 156.615)",
+          "oklch(83.571% 0.01473 156.615)",
+          "oklch(95.000% 0.01473 156.615)"
+        ]
+      },
+      "paper-line": {
+        "role": "neutral",
+        "displayName": "Paper Line",
+        "tonalRamp": [
+          "oklch(15.000% 0.01161 128.607)",
+          "oklch(26.429% 0.01161 128.607)",
+          "oklch(37.857% 0.01161 128.607)",
+          "oklch(49.286% 0.01161 128.607)",
+          "oklch(60.714% 0.01161 128.607)",
+          "oklch(72.143% 0.01161 128.607)",
+          "oklch(83.571% 0.01161 128.607)",
+          "oklch(95.000% 0.01161 128.607)"
+        ]
+      },
+      "signal-blue": {
+        "role": "primary",
+        "displayName": "Signal Blue",
+        "tonalRamp": [
+          "oklch(15.000% 0.17090 257.940)",
+          "oklch(26.429% 0.17090 257.940)",
+          "oklch(37.857% 0.17090 257.940)",
+          "oklch(49.286% 0.17090 257.940)",
+          "oklch(60.714% 0.17090 257.940)",
+          "oklch(72.143% 0.17090 257.940)",
+          "oklch(83.571% 0.17090 257.940)",
+          "oklch(95.000% 0.17090 257.940)"
+        ]
+      },
+      "signal-green": {
+        "role": "secondary",
+        "displayName": "Signal Green",
+        "tonalRamp": [
+          "oklch(15.000% 0.09479 181.685)",
+          "oklch(26.429% 0.09479 181.685)",
+          "oklch(37.857% 0.09479 181.685)",
+          "oklch(49.286% 0.09479 181.685)",
+          "oklch(60.714% 0.09479 181.685)",
+          "oklch(72.143% 0.09479 181.685)",
+          "oklch(83.571% 0.09479 181.685)",
+          "oklch(95.000% 0.09479 181.685)"
+        ]
+      },
+      "signal-rust": {
+        "role": "tertiary",
+        "displayName": "Signal Rust",
+        "tonalRamp": [
+          "oklch(15.000% 0.14309 32.662)",
+          "oklch(26.429% 0.14309 32.662)",
+          "oklch(37.857% 0.14309 32.662)",
+          "oklch(49.286% 0.14309 32.662)",
+          "oklch(60.714% 0.14309 32.662)",
+          "oklch(72.143% 0.14309 32.662)",
+          "oklch(83.571% 0.14309 32.662)",
+          "oklch(95.000% 0.14309 32.662)"
+        ]
+      },
+      "native-canvas": {
+        "role": "neutral",
+        "displayName": "Native Canvas",
+        "tonalRamp": [
+          "oklch(15.000% 0.00287 264.542)",
+          "oklch(26.429% 0.00287 264.542)",
+          "oklch(37.857% 0.00287 264.542)",
+          "oklch(49.286% 0.00287 264.542)",
+          "oklch(60.714% 0.00287 264.542)",
+          "oklch(72.143% 0.00287 264.542)",
+          "oklch(83.571% 0.00287 264.542)",
+          "oklch(95.000% 0.00287 264.542)"
+        ]
+      },
+      "native-surface": {
+        "role": "neutral",
+        "displayName": "Native Surface",
+        "tonalRamp": [
+          "oklch(15.000% 0.00000 0.000)",
+          "oklch(26.429% 0.00000 0.000)",
+          "oklch(37.857% 0.00000 0.000)",
+          "oklch(49.286% 0.00000 0.000)",
+          "oklch(60.714% 0.00000 0.000)",
+          "oklch(72.143% 0.00000 0.000)",
+          "oklch(83.571% 0.00000 0.000)",
+          "oklch(95.000% 0.00000 0.000)"
+        ]
+      },
+      "native-subtle": {
+        "role": "neutral",
+        "displayName": "Native Subtle",
+        "tonalRamp": [
+          "oklch(15.000% 0.00515 247.877)",
+          "oklch(26.429% 0.00515 247.877)",
+          "oklch(37.857% 0.00515 247.877)",
+          "oklch(49.286% 0.00515 247.877)",
+          "oklch(60.714% 0.00515 247.877)",
+          "oklch(72.143% 0.00515 247.877)",
+          "oklch(83.571% 0.00515 247.877)",
+          "oklch(95.000% 0.00515 247.877)"
+        ]
+      },
+      "native-text": {
+        "role": "neutral",
+        "displayName": "Native Text",
+        "tonalRamp": [
+          "oklch(15.000% 0.02725 242.367)",
+          "oklch(26.429% 0.02725 242.367)",
+          "oklch(37.857% 0.02725 242.367)",
+          "oklch(49.286% 0.02725 242.367)",
+          "oklch(60.714% 0.02725 242.367)",
+          "oklch(72.143% 0.02725 242.367)",
+          "oklch(83.571% 0.02725 242.367)",
+          "oklch(95.000% 0.02725 242.367)"
+        ]
+      },
+      "native-muted": {
+        "role": "neutral",
+        "displayName": "Native Muted",
+        "tonalRamp": [
+          "oklch(15.000% 0.02608 248.337)",
+          "oklch(26.429% 0.02608 248.337)",
+          "oklch(37.857% 0.02608 248.337)",
+          "oklch(49.286% 0.02608 248.337)",
+          "oklch(60.714% 0.02608 248.337)",
+          "oklch(72.143% 0.02608 248.337)",
+          "oklch(83.571% 0.02608 248.337)",
+          "oklch(95.000% 0.02608 248.337)"
+        ]
+      },
+      "native-line": {
+        "role": "neutral",
+        "displayName": "Native Line",
+        "tonalRamp": [
+          "oklch(15.000% 0.01044 247.941)",
+          "oklch(26.429% 0.01044 247.941)",
+          "oklch(37.857% 0.01044 247.941)",
+          "oklch(49.286% 0.01044 247.941)",
+          "oklch(60.714% 0.01044 247.941)",
+          "oklch(72.143% 0.01044 247.941)",
+          "oklch(83.571% 0.01044 247.941)",
+          "oklch(95.000% 0.01044 247.941)"
+        ]
+      },
+      "native-accent": {
+        "role": "primary",
+        "displayName": "Native Accent",
+        "tonalRamp": [
+          "oklch(15.000% 0.08097 243.251)",
+          "oklch(26.429% 0.08097 243.251)",
+          "oklch(37.857% 0.08097 243.251)",
+          "oklch(49.286% 0.08097 243.251)",
+          "oklch(60.714% 0.08097 243.251)",
+          "oklch(72.143% 0.08097 243.251)",
+          "oklch(83.571% 0.08097 243.251)",
+          "oklch(95.000% 0.08097 243.251)"
+        ]
+      },
+      "native-dark-canvas": {
+        "role": "neutral",
+        "displayName": "Native Dark Canvas",
+        "tonalRamp": [
+          "oklch(15.000% 0.01647 248.439)",
+          "oklch(26.429% 0.01647 248.439)",
+          "oklch(37.857% 0.01647 248.439)",
+          "oklch(49.286% 0.01647 248.439)",
+          "oklch(60.714% 0.01647 248.439)",
+          "oklch(72.143% 0.01647 248.439)",
+          "oklch(83.571% 0.01647 248.439)",
+          "oklch(95.000% 0.01647 248.439)"
+        ]
+      },
+      "native-dark-surface": {
+        "role": "neutral",
+        "displayName": "Native Dark Surface",
+        "tonalRamp": [
+          "oklch(15.000% 0.02038 248.480)",
+          "oklch(26.429% 0.02038 248.480)",
+          "oklch(37.857% 0.02038 248.480)",
+          "oklch(49.286% 0.02038 248.480)",
+          "oklch(60.714% 0.02038 248.480)",
+          "oklch(72.143% 0.02038 248.480)",
+          "oklch(83.571% 0.02038 248.480)",
+          "oklch(95.000% 0.02038 248.480)"
+        ]
+      },
+      "native-dark-subtle": {
+        "role": "neutral",
+        "displayName": "Native Dark Subtle",
+        "tonalRamp": [
+          "oklch(15.000% 0.02269 245.925)",
+          "oklch(26.429% 0.02269 245.925)",
+          "oklch(37.857% 0.02269 245.925)",
+          "oklch(49.286% 0.02269 245.925)",
+          "oklch(60.714% 0.02269 245.925)",
+          "oklch(72.143% 0.02269 245.925)",
+          "oklch(83.571% 0.02269 245.925)",
+          "oklch(95.000% 0.02269 245.925)"
+        ]
+      },
+      "native-dark-text": {
+        "role": "neutral",
+        "displayName": "Native Dark Text",
+        "tonalRamp": [
+          "oklch(15.000% 0.01035 247.936)",
+          "oklch(26.429% 0.01035 247.936)",
+          "oklch(37.857% 0.01035 247.936)",
+          "oklch(49.286% 0.01035 247.936)",
+          "oklch(60.714% 0.01035 247.936)",
+          "oklch(72.143% 0.01035 247.936)",
+          "oklch(83.571% 0.01035 247.936)",
+          "oklch(95.000% 0.01035 247.936)"
+        ]
+      },
+      "native-dark-muted": {
+        "role": "neutral",
+        "displayName": "Native Dark Muted",
+        "tonalRamp": [
+          "oklch(15.000% 0.02224 245.915)",
+          "oklch(26.429% 0.02224 245.915)",
+          "oklch(37.857% 0.02224 245.915)",
+          "oklch(49.286% 0.02224 245.915)",
+          "oklch(60.714% 0.02224 245.915)",
+          "oklch(72.143% 0.02224 245.915)",
+          "oklch(83.571% 0.02224 245.915)",
+          "oklch(95.000% 0.02224 245.915)"
+        ]
+      },
+      "native-dark-line": {
+        "role": "neutral",
+        "displayName": "Native Dark Line",
+        "tonalRamp": [
+          "oklch(15.000% 0.02641 250.523)",
+          "oklch(26.429% 0.02641 250.523)",
+          "oklch(37.857% 0.02641 250.523)",
+          "oklch(49.286% 0.02641 250.523)",
+          "oklch(60.714% 0.02641 250.523)",
+          "oklch(72.143% 0.02641 250.523)",
+          "oklch(83.571% 0.02641 250.523)",
+          "oklch(95.000% 0.02641 250.523)"
+        ]
+      },
+      "native-dark-accent": {
+        "role": "primary",
+        "displayName": "Native Dark Accent",
+        "tonalRamp": [
+          "oklch(15.000% 0.07818 241.065)",
+          "oklch(26.429% 0.07818 241.065)",
+          "oklch(37.857% 0.07818 241.065)",
+          "oklch(49.286% 0.07818 241.065)",
+          "oklch(60.714% 0.07818 241.065)",
+          "oklch(72.143% 0.07818 241.065)",
+          "oklch(83.571% 0.07818 241.065)",
+          "oklch(95.000% 0.07818 241.065)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "website-display": {
+        "displayName": "Website Display",
+        "purpose": "Public website hero headline; self-hosted Sora."
+      },
+      "website-headline": {
+        "displayName": "Website Headline",
+        "purpose": "Website section headings."
+      },
+      "website-title": {
+        "displayName": "Website Title",
+        "purpose": "System-font explanation headings."
+      },
+      "website-body": {
+        "displayName": "Website Body",
+        "purpose": "Reading copy on warm paper."
+      },
+      "website-control": {
+        "displayName": "Website Control",
+        "purpose": "Appearance and effort controls."
+      },
+      "native-headline": {
+        "displayName": "Native Headline",
+        "purpose": "Utility page heading."
+      },
+      "native-title": {
+        "displayName": "Native Title",
+        "purpose": "Compact utility section heading."
+      },
+      "native-body": {
+        "displayName": "Native Body",
+        "purpose": "Operate-mode settings and explanations."
+      },
+      "native-control": {
+        "displayName": "Native Control",
+        "purpose": "Supporting labels and status messages."
+      },
+      "native-mono": {
+        "displayName": "Native Mono",
+        "purpose": "Hexadecimal labels and configuration."
+      }
+    },
+    "shadows": [
+      {
+        "name": "website-specimen",
+        "value": "0 22px 60px -22px #18201e66",
+        "purpose": "Ambient separation between the dark demonstration window and paper."
+      },
+      {
+        "name": "native-badge",
+        "value": "0 3px 12px #0002",
+        "purpose": "Shared native preview and overlay badge lift."
+      },
+      {
+        "name": "website-selected-segment",
+        "value": "0 2px 5px #18201e18",
+        "purpose": "Selected appearance control within the segment tray."
+      },
+      {
+        "name": "native-tab-selection",
+        "value": "inset 0 -2px var(--accent)",
+        "purpose": "Current native settings tab underline."
+      }
+    ],
+    "motion": [
+      {
+        "name": "website-ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Selection-signal changes in the synthetic website specimen."
+      },
+      {
+        "name": "website-signal-transition",
+        "value": "400ms",
+        "purpose": "Outline, tint, badge border, model dot, and effort bar changes."
+      },
+      {
+        "name": "website-action-transition",
+        "value": "200ms",
+        "purpose": "Primary action background and text changes."
+      },
+      {
+        "name": "native-action-transition",
+        "value": "100ms ease-out",
+        "purpose": "Button background changes when reduced motion is not requested."
+      },
+      {
+        "name": "native-signal-transition",
+        "value": "120ms ease-out",
+        "purpose": "Preview outline and model-dot changes when reduced motion is not requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "website-wide",
+        "value": "1600px"
+      },
+      {
+        "name": "website-narrow-desktop",
+        "value": "1120px"
+      },
+      {
+        "name": "website-stacked-hero",
+        "value": "860px"
+      },
+      {
+        "name": "website-phone",
+        "value": "580px"
+      },
+      {
+        "name": "website-small-phone",
+        "value": "400px"
+      },
+      {
+        "name": "native-narrow",
+        "value": "700px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Native Primary Button",
+      "kind": "button",
+      "description": "Compact utility action from src/style.css.",
+      "html": "<button class=\"ds-native-primary\">Test overlay</button>",
+      "css": ".ds-native-primary{display:inline-flex;align-items:center;justify-content:center;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;font-size:14px;font-weight:550;min-height:34px;padding:7px 12px;border:1px solid transparent;border-radius:7px;background:var(--accent,#2b5d82);color:#fff;cursor:pointer}.ds-native-primary:hover{background:#214966}.ds-native-primary:focus-visible{outline:2px solid var(--accent,#2b5d82);outline-offset:3px}.ds-native-primary:disabled{cursor:default;opacity:.5}@media(prefers-color-scheme:dark){.ds-native-primary{background:#396c92}.ds-native-primary:hover{background:#457ea7}}@media(prefers-reduced-motion:no-preference){.ds-native-primary{transition:background-color 100ms ease-out}}",
+      "refersTo": "native-button-primary"
+    },
+    {
+      "name": "Native Neutral Button",
+      "kind": "button",
+      "description": "Quiet utility action from src/style.css.",
+      "html": "<button class=\"ds-native-neutral\">Pause beacon</button>",
+      "css": ".ds-native-neutral{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;font-size:14px;font-weight:550;min-height:34px;padding:7px 12px;border:1px solid var(--line,#dce2e8);border-radius:7px;background:var(--surface,#fff);color:var(--text,#25333e);cursor:pointer}.ds-native-neutral:hover{background:var(--subtle,#f0f3f6)}.ds-native-neutral:focus-visible{outline:2px solid var(--accent,#2b5d82);outline-offset:3px}.ds-native-neutral:disabled{cursor:default;opacity:.5}@media(prefers-reduced-motion:no-preference){.ds-native-neutral{transition:background-color 100ms ease-out}}",
+      "refersTo": "native-button-neutral"
+    },
+    {
+      "name": "Native Text Field",
+      "kind": "input",
+      "description": "Editable synthetic model label from src/style.css.",
+      "html": "<label class=\"ds-native-field\">Model name<input value=\"Model A\" aria-label=\"Model name\"></label>",
+      "css": ".ds-native-field{display:flex;flex-direction:column;gap:6px;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;font-size:12px;color:var(--muted,#5b6875)}.ds-native-field input{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;font-size:14px;height:35px;padding:6px 9px;max-width:100%;border:1px solid var(--line,#dce2e8);border-radius:7px;background:var(--surface,#fff);color:var(--text,#25333e)}.ds-native-field input:focus-visible{outline:2px solid var(--accent,#2b5d82);outline-offset:3px}",
+      "refersTo": "native-input"
+    },
+    {
+      "name": "Native Tabs",
+      "kind": "nav",
+      "description": "Current utility section with a restrained underline from src/style.css.",
+      "html": "<nav class=\"ds-native-tabs\" aria-label=\"Settings sections\"><button aria-current=\"page\">Beacon</button><button>Model colors</button><button>Connections</button></nav>",
+      "css": ".ds-native-tabs{display:flex;gap:24px;border-bottom:1px solid var(--line,#dce2e8)}.ds-native-tabs button{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;font-size:14px;font-weight:550;border:0;border-radius:0;background:transparent;padding:11px 0 13px;color:var(--muted,#5b6875);cursor:pointer}.ds-native-tabs button[aria-current=page]{color:var(--text,#25333e);box-shadow:inset 0 -2px var(--accent,#2b5d82)}.ds-native-tabs button:hover{color:var(--text,#25333e)}.ds-native-tabs button:focus-visible{outline:2px solid var(--accent,#2b5d82);outline-offset:3px}"
+    },
+    {
+      "name": "Native Status Chip",
+      "kind": "chip",
+      "description": "Explicit live-state tone from src/style.css; the sample is synthetic.",
+      "html": "<span class=\"ds-native-chip\" data-state=\"detected\">Detected</span>",
+      "css": ".ds-native-chip{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;font-size:12px;white-space:nowrap;border-radius:5px;padding:6px 9px;background:var(--subtle,#f0f3f6);color:var(--text,#25333e)}.ds-native-chip[data-state=detected]{background:#e6f1ee;color:#246454}.ds-native-chip[data-state=preview]{background:#e5edf6;color:#315e8e}.ds-native-chip[data-state=permission],.ds-native-chip[data-state=error]{background:#f7ede0;color:#91541b}@media(prefers-color-scheme:dark){.ds-native-chip[data-state=detected]{background:#27483e;color:#b1dfce}.ds-native-chip[data-state=preview]{background:#30465b;color:#c6dcf0}.ds-native-chip[data-state=permission],.ds-native-chip[data-state=error]{background:#513e2a;color:#f4d5aa}}",
+      "refersTo": "native-status-chip"
+    },
+    {
+      "name": "Native Session Container",
+      "kind": "card",
+      "description": "Readout container from src/style.css using only synthetic content.",
+      "html": "<div class=\"ds-native-session\"><span class=\"ds-native-dot\"></span><div><strong>Model A</strong><span>Illustrative session</span></div><div class=\"ds-native-effort\">High</div></div>",
+      "css": ".ds-native-session{display:flex;align-items:center;gap:12px;background:var(--surface,#fff);color:var(--text,#25333e);padding:14px 16px;border-radius:10px;min-height:77px;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}.ds-native-dot{width:10px;height:10px;flex:0 0 auto;border-radius:50%;background:var(--beacon-color,#2870d5)}.ds-native-session>div:nth-child(2){flex:1;min-width:0}.ds-native-session strong{display:block;font-size:14px;margin-bottom:4px}.ds-native-session div>span{display:block;font-size:12px;color:var(--muted,#5b6875);line-height:1.4}.ds-native-effort{text-align:right;font-size:12px;flex-shrink:0}",
+      "refersTo": "native-session-container"
+    },
+    {
+      "name": "Website Download Button",
+      "kind": "button",
+      "description": "Large download action from website/style.css.",
+      "html": "<a class=\"ds-web-primary\" href=\"#downloads\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5\"/></svg>Choose your download</a>",
+      "css": ".ds-web-primary{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:15px 22px;min-height:54px;border-radius:8px;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;font-size:15px;font-weight:600;background:var(--ink,#18201e);color:#fff;text-decoration:none;transition:background .2s,color .2s}.ds-web-primary svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.ds-web-primary:hover{background:#35433c}.ds-web-primary:focus-visible{outline:3px solid var(--blue,#2870d5);outline-offset:5px}@media(max-width:580px){.ds-web-primary{font-size:14px;padding:14px 18px}}@media(prefers-reduced-motion:reduce){.ds-web-primary{transition:none}}",
+      "refersTo": "website-button-primary"
+    },
+    {
+      "name": "Website Navigation",
+      "kind": "nav",
+      "description": "Compact product navigation from website/style.css.",
+      "html": "<nav class=\"ds-web-nav\" aria-label=\"Main navigation\"><a href=\"#how-it-works\">How it works</a><a href=\"https://github.com/Tengify/promptbeacon\">Source</a><a class=\"ds-web-nav-download\" href=\"#downloads\">Get the app</a></nav>",
+      "css": ".ds-web-nav{display:flex;align-items:center;gap:34px;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;font-size:14px;font-weight:550;color:var(--ink,#18201e)}.ds-web-nav a{color:inherit;text-decoration:none}.ds-web-nav-download{border:1px solid var(--ink,#18201e);padding:9px 17px;border-radius:7px}.ds-web-nav a:hover{text-decoration:underline;text-underline-offset:5px}.ds-web-nav a:focus-visible{outline:3px solid var(--blue,#2870d5);outline-offset:5px}@media(max-width:580px){.ds-web-nav{gap:15px;font-size:12px}.ds-web-nav>a:first-child{display:none}.ds-web-nav-download{padding:7px 10px}}"
+    },
+    {
+      "name": "Website Appearance Switch",
+      "kind": "custom",
+      "description": "Synthetic rehearsal control from website/style.css; state is demonstrated declaratively.",
+      "html": "<div class=\"ds-web-switch\" role=\"group\" aria-label=\"Beacon appearance\"><button aria-pressed=\"true\">Border</button><button aria-pressed=\"false\">Tint</button><button aria-pressed=\"false\">Badge</button></div>",
+      "css": ".ds-web-switch{display:inline-flex;gap:3px;background:#e4e8de;border-radius:7px;padding:3px}.ds-web-switch button{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;font-size:12px;background:transparent;border:0;border-radius:5px;min-height:34px;padding:7px 13px;color:#4a564a;cursor:pointer}.ds-web-switch button[aria-pressed=true]{background:#fff;color:#1c271d;box-shadow:0 2px 5px #18201e18}.ds-web-switch button:hover{color:#172d1d}.ds-web-switch button:focus-visible{outline:3px solid var(--blue,#2870d5);outline-offset:5px}"
+    },
+    {
+      "name": "Website Beacon Badge",
+      "kind": "custom",
+      "description": "Synthetic model-and-effort signal from website/style.css.",
+      "html": "<div class=\"ds-web-beacon\"><span class=\"ds-web-beacon-dot\"></span><div><strong>Model A</strong><span>High · Synthetic</span></div><span class=\"ds-web-bars\" aria-hidden=\"true\"><i class=\"ds-web-filled\"></i><i class=\"ds-web-filled\"></i><i class=\"ds-web-filled\"></i><i></i><i></i></span></div>",
+      "css": ".ds-web-beacon{display:inline-flex;align-items:center;gap:11px;color:#fff;background:var(--ink,#18201e);border:1px solid var(--signal,#2870d5);border-radius:8px;padding:10px 13px;min-width:208px;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;transition:border-color .4s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-web-beacon-dot{height:10px;width:10px;flex-shrink:0;background:var(--signal,#2870d5);border-radius:50%;transition:background .4s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-web-beacon strong{display:block;font-size:12px;font-weight:600}.ds-web-beacon div>span{display:block;color:#c4cdc7;font-size:10px}.ds-web-bars{display:flex;align-items:flex-end;gap:3px;margin-left:9px;height:19px}.ds-web-bars i{width:3px;height:5px;background:#566359;border-radius:1px}.ds-web-bars i:nth-child(2){height:8px}.ds-web-bars i:nth-child(3){height:11px}.ds-web-bars i:nth-child(4){height:14px}.ds-web-bars i:nth-child(5){height:17px}.ds-web-bars i.ds-web-filled{background:var(--signal,#2870d5)}@media(prefers-reduced-motion:reduce){.ds-web-beacon,.ds-web-beacon-dot{transition:none}}",
+      "refersTo": "website-beacon-badge"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Color-Calibration Bench",
+    "overview": "PromptBeacon is a quiet instrument beside a coding session. Its established native interface stays in operate mode: neutral surfaces, precise swatches, a large window specimen, and compact live readouts. The active selection becomes a peripheral color signal with explicit effort notation. Reading and typing take priority over decoration.\n\nThe public website presents the same mechanism at a longer viewing distance. Warm paper, bold Sora headlines, and a dark geometric coding specimen explain the utility through an explicitly synthetic rehearsal. System typography continues to carry controls and practical detail. The website introduces the instrument; it does not replace the native utility's density, typography, or OS-responsive theme.",
+    "keyCharacteristics": [
+      "Color-calibration language: labeled swatches, window edges, and explicit effort bars.",
+      "Native utility density alongside a spacious paper-based marketing surface.",
+      "Self-hosted Sora for website display text; system typography for controls and native screens.",
+      "Text equivalents and distinct state labels accompany every model signal.",
+      "Synthetic, labeled demonstrations instead of private session captures."
+    ],
+    "rules": [
+      {
+        "name": "The Signal Integrity Rule",
+        "body": "Model colors identify a selection. They never substitute for the model name, effort label, or unknown state.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Working Distances Rule",
+        "body": "Sora belongs to website display text. Native settings, website controls, and detailed explanations keep their established system faces.",
+        "section": "typography"
+      },
+      {
+        "name": "The Quiet Edge Rule",
+        "body": "The real overlay remains a peripheral, non-interactive surface. Interactive rehearsal controls belong outside the overlay.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the native utility in operate mode, with Beacon, Model colors, and Connections as its settings sections.",
+      "Do pair model color with a readable model name and pair effort bars with an explicit effort label.",
+      "Do preserve visible distinctions between detected, preview, unknown, paused, waiting, permission-required, and error states.",
+      "Do use the existing paper, system controls, and self-hosted Sora pairing for website additions.",
+      "Do label illustrative sessions as synthetic and keep public examples independent of private settings, screenshots, and diagnostics.",
+      "Do retain keyboard focus indicators and reduced-motion behavior."
+    ],
+    "donts": [
+      "Don't turn the native settings window into a marketing screen or a dashboard of invented metrics.",
+      "Don't guess unavailable effort, present preview as live detection, or let a stale selection look current.",
+      "Don't place interactive content in the real overlay or obscure the prompt with controls.",
+      "Don't use display typography for native utility controls or scale synthetic specimen microcopy into general body typography.",
+      "Don't introduce external font requests, private session captures, or local-machine paths into public design examples."
+    ]
+  }
+}

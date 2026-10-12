@@ -1,0 +1,5 @@
+import { spawn } from 'node:child_process';
+import { rustEnv } from './runtime.mjs';
+const child = spawn(process.execPath, ['node_modules/@tauri-apps/cli/tauri.js', ...process.argv.slice(2)], { stdio: 'inherit', env: rustEnv({ release: process.argv[2] === 'build' }) });
+child.on('error', error => { console.error(error.message); process.exit(1); });
+child.on('exit', code => process.exit(code ?? 1));

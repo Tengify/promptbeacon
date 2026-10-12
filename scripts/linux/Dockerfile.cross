@@ -1,0 +1,14 @@
+# Native ARM compiler + x64 sysroot; avoids running a compiler under emulation.
+FROM --platform=linux/amd64 promptbeacon-local-builder AS sysroot
+FROM rust:1.99-bookworm
+RUN apt-get update && apt-get install -y --no-install-recommends gcc-x86-64-linux-gnu g++-x86-64-linux-gnu pkg-config file && rm -rf /var/lib/apt/lists/*
+COPY --from=sysroot /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu
+COPY --from=sysroot /usr/include /usr/include
+COPY --from=sysroot /usr/share/pkgconfig /usr/share/pkgconfig
+RUN mkdir -p /lib64 && ln -s /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 /lib64/ld-linux-x86-64.so.2
+RUN rustup target add x86_64-unknown-linux-gnu
+ENV CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER=x86_64-linux-gnu-gcc
+ENV PKG_CONFIG_ALLOW_CROSS=1
+ENV PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/share/pkgconfig
+ENV RUSTFLAGS="--remap-path-prefix=/usr/local/cargo=/build/cargo --remap-path-prefix=/usr/local/rustup=/build/rustup"
+WORKDIR /build
