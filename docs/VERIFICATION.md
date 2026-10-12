@@ -21,7 +21,7 @@ The leak result covers the exercised core/native paths. Long-running system-webv
 - macOS preview bundle ad-hoc signed and deep/strict signature verification passed.
 - Packaged macOS and Linux status-line modes tested with dummy JSON: stores only four allowed event fields and rejects invalid session identifiers.
 - Binary string checks find zero personal username/project-path matches in all three platform artifacts. Build/source paths are remapped.
-- Downloads: macOS universal ZIP 3.77 MiB, Windows portable ZIP 1.76 MiB, Linux Debian installer 1.74 MiB. SHA-256 checksums accompany them.
+- Downloads: macOS universal ZIP 3.76 MiB, Windows portable ZIP 1.75 MiB, Linux Debian installer 1.73 MiB. SHA-256 checksums accompany them.
 
 Build success is not native GUI certification. Windows/Linux desktop runtime behavior, Intel macOS runtime, fullscreen, multiple displays, terminal-tab binding, and different app versions remain native-host validation tasks. Preview builds have no commercial signing certificate/notarization.
 
